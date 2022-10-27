@@ -1,0 +1,404 @@
+@import url("http://fonts.cdnfonts.com/css/raleway-5?styles=27267,27272,27263,27265,27268,27256,27258,27254");
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 1.3750em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 0.8750em;
+  font-weight: 400;
+}
+
+h3.b {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-left: 11em;
+  margin-top: 44px;
+  width: 61.09px;
+  height: 19px;
+  pointer-events: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  right: 4.8125em;
+}
+
+a#nav_heberg,
+a#nav_activ {
+  padding: 1rem;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  left: 36.22%;
+  right: 34.12%;
+  margin-top: 2em;
+  padding-bottom: 0;
+}
+
+a#nav_heberg:hover,
+a#nav_activ:hover {
+  padding-top: 2.875em;
+  margin-top: 0;
+  border-top: 2px #0065fc solid;
+  border-spacing: 0;
+  font-weight: 400;
+  color: #0065fc;
+}
+
+.description_site {
+  font-size: 1.3750em;
+  font-weight: 700;
+  height: 26px;
+  margin-bottom: 0.5em;
+  margin-top: 4.2075em;
+}
+
+.localisation_champ, 
+.loc_form {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.localistion_icon, 
+input[type=text], 
+input[type=submit] {
+  padding: 22px 24px 22px 24px;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+.localistion_icon, 
+input[type=text] {
+  border: 1px solid #F2F2F2;
+}
+
+.localistion_icon {
+  background: #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input[type=text] {
+  background: #FFFFFF;
+  color: black;
+  }
+
+  input[type=submit] {
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    }
+
+.filtre {
+  display: flex;
+  align-items: center;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 39px;
+}
+
+.filtres_item {
+  color:#0065FC;
+  border: 2px solid #D9D9D9;
+  border-radius: 25px;
+  margin: 14px;
+  padding: 14px;
+}
+
+.filtres_item strong {
+  color: black;
+  font-weight: 700;
+  margin-left: 5px;
+  font-size: 1.0625em;
+}
+
+.filtres_item:hover {
+  background-color: #DEEBFF;
+}
+
+.legendes_logements_dispo {
+  display: flex;
+  align-items: row;
+}
+
+.icon_i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #0065fc;
+  border: 1px solid #D9D9D9;
+  border-radius: 100%;
+  margin: 0;
+  height: 24px;  
+  width: 24px;
+}
+
+.legendes {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 1.25em;
+  height: 24px;  
+}
+
+.plus_populaire_hebergements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.hebergements {
+  background: #F2F2F2;
+  border-radius: 20px;
+  width: 880px;
+  height: 626px;
+  padding-left: 40px;
+  padding-bottom: 46px;
+}
+
+.hebergements h1 {
+  margin: 0;
+  padding-top: 42px;
+  padding-left: 18px;
+  padding-bottom: 23px;
+}
+
+#heberg_categorie_toutes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#heberg_categorie_toutes a,
+.plus_populaire a 
+#activites_toutes a {
+  color: black;
+}
+
+#heberg_categorie_toutes img {
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  width: 246px;
+  height: 124px;
+  margin-bottom: 0;
+  padding: 0;
+
+}
+#heberg_categorie_toutes article {
+  background: white;
+  width: 255px;
+  height: 205px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 30px;
+  box-shadow: 1px 5px 5px #d1d0d0;
+}
+
+
+#heberg_categorie_toutes .ranking, 
+#heberg_categorie_toutes h2, 
+#heberg_categorie_toutes p {
+  margin-top: 0;
+  margin-bottom: 2px;
+  padding-left: 16px;
+}
+
+#heberg_categorie_toutes h2 {
+  padding-top: 4px;
+  font-weight: 700;
+}
+.ranking {
+  align-items: left;
+  height: 30px;
+  width: 238px;
+  margin-bottom: 40px;
+}
+
+.rank_good, 
+.rank_bad {
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.rank_bad {
+  color: #F2F2F2;
+}
+
+.rank_good {
+  color: #0065fc;
+}
+
+.show_more a, 
+.show_more a:visited,
+.show_more a:hover,
+.show_more a:active {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.show_more a:hover {
+  text-decoration: underline;
+}
+
+.chart_class {
+  float: right;
+  color:#0065FC
+}
+
+.plus_populaire h1 {
+  margin: 0;
+  width: 375px;
+  height: 26px;
+  margin-bottom: 26px;
+}
+
+.plus_populaire {
+  background: #F2F2F2;
+  width: 420px;
+  height: 625px;
+  border-radius: 20px;
+  padding-left: 37px;
+  padding-top: 41px;
+}
+
+.plus_populaire_cat img {
+  border-radius: 20px 0px 0px 20px;
+  width: 137px;
+  height: 144px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.plus_populaire_cat {
+  display: flex;
+  background: white;
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 33px;
+  width: 365px;
+  height: 144px;
+  box-shadow: 1px 5px 5px #d1d0d0;
+}
+
+.plus_populaire_cat div {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 22px;
+}
+
+
+.plus_populaire_texte p,
+.plus_populaire_texte h2 {
+  margin-top: 0;
+}
+.plus_populaire_texte h2 {
+  margin-bottom: 0;
+  padding-top: 16px;
+  font-weight: 700;
+}
+
+
+.plus_populaire .ranking_2 {
+  position: absolute;
+  bottom: 0;
+}
+
+#activites_toutes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#activites_toutes img {
+  width: 302px;
+  height: 445px;
+  border-radius: 20px 20px 0px 0px;
+} 
+
+#activites_toutes div {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 5px 5px #F2F2F2;
+}
+
+ #activites_toutes h2 {
+  padding-left: 19px;
+  font-weight: 700;
+}
+
+footer {
+  background: #F2F2F2;
+  height: 225px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 327px;
+  margin-top: 60px;
+}
+
+footer a {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px; 
+}
+
+footer h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+div a {
+  color: black;
+}
