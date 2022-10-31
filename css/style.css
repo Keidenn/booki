@@ -421,20 +421,24 @@ div a {
   #hebergements {
     width: 880px;
     margin-bottom: 53px;
+    padding-left: 12px;
   }
 
   .plus_populaire {
-  width: 883px;
+  width: 890px;
   height: 278px;
+  padding-left: 0px;
   }
 
   .plus_populaire h1 {
     width: 830px;
+    padding-left: 20px;
   }
 
   .direction_query_populaire {
     display: flex;
     flex-direction: row;
+    padding-left: 15px;
   }
 
   .plus_populaire_cat {
