@@ -1,11 +1,16 @@
 @import url("http://fonts.cdnfonts.com/css/raleway-5?styles=27267,27272,27263,27265,27268,27256,27258,27254");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   max-width: 1400px;
-  margin-left: 15em;
-  margin-right: 15em;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 h1,
@@ -39,9 +44,7 @@ a {
 
 .logo {
   position: absolute;
-  left: 0px;
   top: 0px;
-  margin-left: 11em;
   margin-top: 44px;
   width: 61.09px;
   height: 19px;
@@ -191,7 +194,7 @@ input[type=text] {
   margin-bottom: 60px;
 }
 
-.hebergements {
+#hebergements {
   background: #F2F2F2;
   border-radius: 20px;
   width: 880px;
@@ -200,7 +203,7 @@ input[type=text] {
   padding-bottom: 46px;
 }
 
-.hebergements h1 {
+#hebergements h1 {
   margin: 0;
   padding-top: 42px;
   padding-left: 18px;
@@ -405,24 +408,75 @@ div a {
 }
 
 @media (max-width: 992px) {
-  body,
-  .logo {
-    margin-left: 72px;
-    margin-right: 72px;
-  }
-
-  nav {
-    margin-right: 0;
+  body {  
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .plus_populaire_hebergements {
-    display: flex;
     flex-direction: column;
   }
 
-  .hebergements {
-    width: 990px;
+  #hebergements {
+    width: 880px;
+    margin-bottom: 53px;
+  }
+
+  .plus_populaire {
+  width: 883px;
+  height: 278px;
+  }
+
+  .plus_populaire h1 {
+    width: 830px;
+  }
+
+  .direction_query_populaire {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .plus_populaire_cat {
+    width: 252px;
+    height: 144px;
+    margin-right: 23px;
+  }
+
+  .plus_populaire_cat img {
+    width: 106px;
+    height: 144px;
+  }
+
+  .plus_populaire_cat h2 {
+    font-size: 14px;
+  }
+
+  .plus_populaire_cat p {
+    font-size: 13px;
+  }
+
+  #activites_toutes img {
+    height: 267px;
+    width: 182px;
+  }
+
+  #activites_toutes div {
+    position: relative;
+    max-width: 182px;
+    height: 323px;
+  }
+
+  #activites_toutes h2 {
+    margin: 7px;
+  }
+
+  footer {
+    padding-left: 70px;
+    padding-right: 173px;
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+}
