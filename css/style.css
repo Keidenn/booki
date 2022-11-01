@@ -98,9 +98,13 @@ a#nav_activ:hover {
   align-items: center;
 }
 
+button[name=mobile] {
+  display: none;
+}
+
 .localistion_icon, 
 input[type=text], 
-input[type=submit] {
+input[name=desktop] {
   padding: 22px 24px 22px 24px;
   font-size: 1.125em;
   font-weight: 700;
@@ -123,7 +127,7 @@ input[type=text] {
   color: black;
   }
 
-  input[type=submit] {
+  input[name=desktop] {
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
@@ -483,4 +487,108 @@ div a {
 
 @media (max-width: 768px) {
 
+  body {  
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo_div {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+  }
+
+  .logo {
+    margin-top: 21px;
+  }
+
+  a#nav_heberg,
+  a#nav_activ {
+    width: 100%;
+    margin: auto;
+    border-bottom: 3px solid #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding: 0;
+    padding-bottom: 23px;
+  }
+
+  a#nav_heberg:hover,
+  a#nav_activ:hover {
+    border-top: 0px;
+    margin-top: 100px;
+    padding: 0;
+    padding-bottom: 23px;
+    border-bottom: 3px solid #0065FC;
+}
+
+  .description_site {
+    margin-top: 31px;
+    margin-left: 20px;
+  }
+
+  .description_supplementaire {
+    padding-top: 25px;
+    margin-left: 20px;
+  }
+
+  .localistion_icon {
+    margin-left: 20px;
+  }
+  
+  input[name=desktop] {
+  display: none;
+  }
+
+  button[name=mobile] {
+    display: block;
+    color: white;
+    background: #0065FC;
+    padding: 22px 24px 22px 24px;
+    border: 1px solid #F2F2F2;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 1.125em;
+    font-weight: 700;
+    }
+  /* .localisation_champ, 
+.loc_form {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.localistion_icon, 
+input[type=text], 
+input[name=desktop] {
+  padding: 22px 24px 22px 24px;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+.localistion_icon, 
+input[type=text] {
+  border: 1px solid #F2F2F2;
+}
+
+.localistion_icon {
+  background: #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input[type=text] {
+  background: #FFFFFF;
+  color: black;
+  }
+
+  input[name=desktop] {
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    } */
 }
