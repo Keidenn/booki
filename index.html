@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Booki</title>
-    <!-- View port à ajouter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3f8f1bd356.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="logo_div">
+      <a href="#">
+        <img src="assets/logo/Booki.png" class="logo">
+      </a>
+    </div>
+    <div style="clear:both"></div>
     <nav>
       <a id="nav_heberg" href="#hebergements">Hébergements</a>
       <a id="nav_activ" href="#activites_toutes">Activités</a>
     </nav>
-    <h1>
-      <a href="#">
-        <img src="assets/logo/Booki.png" class="logo">
-      </a>
-    </h1>
     <div class="top">
       <p class="description_site">Trouvez votre hébergement pour des vacances de rêve</p>
       <p class="description_supplementaire">En plein centre-ville ou en pleine nature</p>
@@ -27,11 +28,16 @@
         </p>
         <form method="post" action="">
           <div class="loc_form">
-            <div class="rech_localisation_form">
+            <div>
               <input type="text" name="localisation" placeholder="Marseille, France" required />
             </div>
-            <div class="envoyer_localisation_form">
-              <input type="submit" value="Rechercher" />
+            <div>
+              <input name="desktop" type="submit" value="Rechercher" />
+            </div>
+            <div>
+              <button type="submit" name="mobile" class="btn btn-success">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
           </div>
         </form>
