@@ -552,43 +552,4 @@ div a {
     font-size: 1.125em;
     font-weight: 700;
     }
-  /* .localisation_champ, 
-.loc_form {
-  display: flex;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.localistion_icon, 
-input[type=text], 
-input[name=desktop] {
-  padding: 22px 24px 22px 24px;
-  font-size: 1.125em;
-  font-weight: 700;
-}
-
-.localistion_icon, 
-input[type=text] {
-  border: 1px solid #F2F2F2;
-}
-
-.localistion_icon {
-  background: #f2f2f2;
-  border-radius: 15px 0px 0px 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-input[type=text] {
-  background: #FFFFFF;
-  color: black;
-  }
-
-  input[name=desktop] {
-    background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    color: white;
-    } */
 }
