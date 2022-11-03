@@ -488,15 +488,17 @@ div a {
 @media (max-width: 768px) {
 
   body {  
+    width: 375px;
     max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
   }
 
   .logo_div {
     width: 100%;
     position: absolute;
-    left: 50%;
+    left: 45%;
   }
 
   .logo {
@@ -522,6 +524,15 @@ div a {
     padding: 0;
     padding-bottom: 23px;
     border-bottom: 3px solid #0065FC;
+}
+
+a#nav_heberg:active,
+a#nav_activ:active {
+  border-top: 0px;
+  margin-top: 100px;
+  padding: 0;
+  padding-bottom: 23px;
+  border-bottom: 3px solid #0065FC;
 }
 
   .description_site {
@@ -552,43 +563,64 @@ div a {
     font-size: 1.125em;
     font-weight: 700;
     }
-  /* .localisation_champ, 
-.loc_form {
-  display: flex;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.localistion_icon, 
-input[type=text], 
-input[name=desktop] {
-  padding: 22px 24px 22px 24px;
-  font-size: 1.125em;
-  font-weight: 700;
-}
-
-.localistion_icon, 
-input[type=text] {
-  border: 1px solid #F2F2F2;
-}
-
-.localistion_icon {
-  background: #f2f2f2;
-  border-radius: 15px 0px 0px 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-input[type=text] {
-  background: #FFFFFF;
-  color: black;
+  
+  input[type=text] {
+    width: 150px;
   }
 
-  input[name=desktop] {
-    background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    color: white;
-    } */
+
+
+  .filtre {
+    max-width: 332px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .plus_populaire_hebergements {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .plus_populaire {
+    max-width: 375px;
+    height: 580px;
+    border-radius: 0;
+  }
+
+  .plus_populaire h1 {
+    margin: 0;
+    width: 300px;
+  }
+
+  .direction_query_populaire {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  #hebergements {
+    max-width: 375px;
+    height: 1500px;
+    border-radius: 0;
+    background-color: white;
+  }
+
+  .show_more {
+    display: none;
+  }
+
+  #activites_toutes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 0;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
