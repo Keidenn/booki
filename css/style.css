@@ -223,7 +223,7 @@ input[type=text] {
 
 #heberg_categorie_toutes a,
 .plus_populaire a 
-#activites a {
+#activites_toutes a {
   color: black;
 }
 
@@ -357,25 +357,25 @@ input[type=text] {
   bottom: 0;
 }
 
-#activites {
+#activites_toutes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-#activites img {
+#activites_toutes img {
   width: 302px;
   height: 445px;
   border-radius: 20px 20px 0px 0px;
 } 
 
-#activites div {
+#activites_toutes div {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 5px 5px #F2F2F2;
 }
 
- #activites h2 {
+ #activites_toutes h2 {
   padding-left: 19px;
   font-weight: 700;
 }
@@ -464,18 +464,18 @@ div a {
     font-size: 13px;
   }
 
-  #activites img {
+  #activites_toutes img {
     height: 267px;
     width: 182px;
   }
 
-  #activites div {
+  #activites_toutes div {
     position: relative;
     max-width: 182px;
     height: 323px;
   }
 
-  #activites h2 {
+  #activites_toutes h2 {
     margin: 7px;
   }
 
@@ -488,15 +488,17 @@ div a {
 @media (max-width: 768px) {
 
   body {  
+    width: 375px;
     max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
   }
 
   .logo_div {
     width: 100%;
     position: absolute;
-    left: 50%;
+    left: 45%;
   }
 
   .logo {
@@ -522,6 +524,15 @@ div a {
     padding: 0;
     padding-bottom: 23px;
     border-bottom: 3px solid #0065FC;
+}
+
+a#nav_heberg:active,
+a#nav_activ:active {
+  border-top: 0px;
+  margin-top: 100px;
+  padding: 0;
+  padding-bottom: 23px;
+  border-bottom: 3px solid #0065FC;
 }
 
   .description_site {
@@ -558,12 +569,11 @@ div a {
   }
 
 
-  /* a edit */
-  .filtres {
+
+  .filtre {
     max-width: 332px;
     display: flex;
-    justify-content: column;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   
   .plus_populaire_hebergements {
@@ -577,16 +587,40 @@ div a {
     border-radius: 0;
   }
 
+  .plus_populaire h1 {
+    margin: 0;
+    width: 300px;
+  }
+
   .direction_query_populaire {
     max-width: 375px;
     display: flex;
-    justify-content: column;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
 
   #hebergements {
     max-width: 375px;
+    height: 1500px;
     border-radius: 0;
     background-color: white;
   }
 
- }
+  .show_more {
+    display: none;
+  }
+
+  #activites_toutes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 0;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
