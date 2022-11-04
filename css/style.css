@@ -164,7 +164,6 @@ input[type=text] {
 
 .legendes_logements_dispo {
   display: flex;
-  align-items: row;
 }
 
 .icon_i {
@@ -260,7 +259,6 @@ input[type=text] {
   font-weight: 700;
 }
 .ranking {
-  align-items: left;
   height: 30px;
   width: 238px;
   margin-bottom: 40px;
