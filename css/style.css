@@ -13,18 +13,18 @@ body {
 
 }
 
-h1,
 h2,
+h3,
 h3 {
   font-weight: bolder;
 }
 
-h1 {
+h2 {
   font-size: 1.3750em;
   font-weight: 700;
 }
 
-h2 {
+h3 {
   font-size: 1em;
   font-weight: 600;
 }
@@ -164,7 +164,6 @@ input[type=text] {
 
 .legendes_logements_dispo {
   display: flex;
-  align-items: row;
 }
 
 .icon_i {
@@ -207,7 +206,7 @@ input[type=text] {
   padding-bottom: 46px;
 }
 
-#hebergements h1 {
+#hebergements h2 {
   margin: 0;
   padding-top: 42px;
   padding-left: 18px;
@@ -248,19 +247,18 @@ input[type=text] {
 
 
 #heberg_categorie_toutes .ranking, 
-#heberg_categorie_toutes h2, 
+#heberg_categorie_toutes h3, 
 #heberg_categorie_toutes p {
   margin-top: 0;
   margin-bottom: 2px;
   padding-left: 16px;
 }
 
-#heberg_categorie_toutes h2 {
+#heberg_categorie_toutes h3 {
   padding-top: 4px;
   font-weight: 700;
 }
 .ranking {
-  align-items: left;
   height: 30px;
   width: 238px;
   margin-bottom: 40px;
@@ -299,7 +297,7 @@ input[type=text] {
   color:#0065FC
 }
 
-.plus_populaire h1 {
+.plus_populaire h2 {
   margin: 0;
   width: 375px;
   height: 26px;
@@ -342,10 +340,10 @@ input[type=text] {
 
 
 .plus_populaire_texte p,
-.plus_populaire_texte h2 {
+.plus_populaire_texte h3 {
   margin-top: 0;
 }
-.plus_populaire_texte h2 {
+.plus_populaire_texte h3 {
   margin-bottom: 0;
   padding-top: 16px;
   font-weight: 700;
@@ -375,7 +373,7 @@ input[type=text] {
   box-shadow: 1px 5px 5px #F2F2F2;
 }
 
- #activites_toutes h2 {
+ #activites_toutes h3 {
   padding-left: 19px;
   font-weight: 700;
 }
@@ -400,7 +398,7 @@ footer a {
   margin-bottom: 12px; 
 }
 
-footer h2 {
+footer h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -434,7 +432,7 @@ div a {
   padding-left: 0px;
   }
 
-  .plus_populaire h1 {
+  .plus_populaire h2 {
     width: 830px;
     padding-left: 20px;
   }
@@ -456,7 +454,7 @@ div a {
     height: 144px;
   }
 
-  .plus_populaire_cat h2 {
+  .plus_populaire_cat h3 {
     font-size: 14px;
   }
 
@@ -475,7 +473,7 @@ div a {
     height: 323px;
   }
 
-  #activites_toutes h2 {
+  #activites_toutes h3 {
     margin: 7px;
   }
 
@@ -568,8 +566,6 @@ a#nav_activ:active {
     width: 150px;
   }
 
-
-
   .filtre {
     max-width: 332px;
     display: flex;
@@ -587,7 +583,7 @@ a#nav_activ:active {
     border-radius: 0;
   }
 
-  .plus_populaire h1 {
+  .plus_populaire h2 {
     margin: 0;
     width: 300px;
   }
