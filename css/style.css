@@ -337,7 +337,6 @@ input[type=text] {
 .plus_populaire_cat div {
   position: relative;
   margin-left: 20px;
-  margin-right: 22px;
 }
 
 
@@ -438,26 +437,31 @@ div a {
   width: 890px;
   max-width: 99%;
   height: auto;
-  padding-left: 0px;
+  padding-left: 10px;
+  padding-right: 1px;
+  padding-bottom: 41px;
   }
 
   .plus_populaire h2 {
     width: 830px;
     max-width: 96%;
     padding-left: 20px;
+    margin-bottom: 10px;
   }
 
   .direction_query_populaire {
     display: flex;
     flex-direction: row;
-    padding-left: 15px;
+    flex-wrap: wrap;
   }
 
   .plus_populaire_cat {
-    max-width: 252px;
+    max-width: 400px;
     max-height: 144px;
-    width: auto;
-    margin-right: 23px;
+    width: 252px;
+    margin: auto;
+    margin-left: 15px;
+    margin-top: 15px;
   }
 
   .plus_populaire_cat img {
@@ -550,11 +554,6 @@ a#nav_activ:active {
     margin-right: 20px;
   }
 
-  .legendes_logements_dispo {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-
   .description_supplementaire {
     padding-top: 25px;
     margin-left: 20px;
@@ -624,6 +623,7 @@ a#nav_activ:active {
 
   .plus_populaire {
     max-width: 100%;
+    width: auto;
     height: 580px;
     border-radius: 0;
   }
@@ -635,10 +635,12 @@ a#nav_activ:active {
   }
 
   .plus_populaire_cat {
-    width: 314px;
+    max-width: 314px;
+    width: auto;
     height: 144px;
+    margin: auto;
+    margin-left:0;
     margin-bottom: 11px;
-    margin-right: 20px;
   }
 
   .plus_populaire_cat img {
