@@ -15,7 +15,6 @@ body {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
-  position: relative
 }
 
 h2 {
@@ -421,6 +420,7 @@ div a {
     max-width: 880px;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
   }
 
   .plus_populaire_hebergements {
@@ -454,14 +454,16 @@ div a {
   }
 
   .plus_populaire_cat {
-    width: 252px;
-    height: 144px;
+    max-width: 252px;
+    max-height: 144px;
+    width: auto;
     margin-right: 23px;
   }
 
   .plus_populaire_cat img {
     width: 106px;
-    height: 144px;
+    height: auto;
+    object-fit: cover;
   }
 
   .plus_populaire_cat h3 {
