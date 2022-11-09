@@ -500,9 +500,6 @@ div a {
 }
 
 @media (max-width: 768px) {
-  body, html {
-    overflow-x: hidden;
-    }
   body {  
     width: 375px;
     max-width: 98%;
@@ -552,6 +549,7 @@ a#nav_activ:active {
   .description_site {
     margin-top: 31px;
     margin-left: 20px;
+    margin-right: 21px;
   }
 
   .description_supplementaire {
