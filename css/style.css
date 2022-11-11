@@ -308,7 +308,6 @@ input[type=text] {
 .plus_populaire {
   background: #F2F2F2;
   width: 30%;
-  min-width: 420px;
   height: auto;
   border-radius: 20px;
   padding-left: 37px;
@@ -456,7 +455,6 @@ div a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
   }
 
   .plus_populaire_cat {
@@ -626,17 +624,13 @@ div a {
   }
 
   .plus_populaire {
-    width: 98em;
-  }
-
-  .plus_populaire {
     width: 98%;
     height: 580px;
     border-radius: 0;
   }
 
   .plus_populaire h2 {
-    width: 330px;
+    width: 96%;
     padding-left: 0;
     margin: 0 0 26px 0;
   }
@@ -694,7 +688,6 @@ div a {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-
   }
 
   #activites_toutes div {
