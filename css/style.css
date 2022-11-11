@@ -458,7 +458,7 @@ div a {
   }
 
   .plus_populaire_cat {
-    max-width: 400px;
+    max-width: 96%;
     max-height: 144px;
     width: 252px;
   }
@@ -470,11 +470,11 @@ div a {
   }
 
   .plus_populaire_cat h3 {
-    font-size: 0.85em;
+    font-size: 1em;
   }
 
   .plus_populaire_cat p {
-    font-size: 0.75em;
+    font-size: 0.9em;
   }
 
   #activites_toutes img {
@@ -648,7 +648,7 @@ div a {
   }
 
   .direction_query_populaire {
-    max-width: 80%;
+    max-width: 96%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
