@@ -116,7 +116,7 @@ input[type=text] {
   color: black;
   }
 
-  input[name=desktop] {
+input[name=desktop] {
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
@@ -455,6 +455,7 @@ div a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .plus_populaire_cat {
