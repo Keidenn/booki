@@ -32,9 +32,15 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 21px;
+}
+
 .logo {
-  position: absolute;
-  margin-top: 44px;
   width: 61.09px;
   height: 19px;
   pointer-events: none;
@@ -87,13 +93,9 @@ a#nav_activ:hover {
   align-items: center;
 }
 
-button[name=mobile] {
-  display: none;
-}
-
 .localistion_icon, 
 input[type=text], 
-input[name=desktop] {
+button[type=submit] {
   padding: 22px 24px 22px 24px;
   font-size: 1.125em;
   font-weight: 700;
@@ -116,12 +118,28 @@ input[type=text] {
   color: black;
   }
 
-input[name=desktop] {
-    background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    color: white;
-    }
+button[type=submit] {
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  color: white;
+}
+
+#rechercher_loupe {
+  display: block;
+  position: relative;
+  width: 132px;
+  height: 66px;
+  font-size: 1.125em;
+  font-weight: 700;
+  cursor: pointer;
+  }
+
+#rechercher_loupe:after {
+  content: 'Rechercher';
+  position: relative;
+  right: 6px;
+}
 
 .filtre {
   display: flex;
@@ -141,7 +159,7 @@ input[name=desktop] {
   color:#0065FC;
   border: 2px solid #D9D9D9;
   border-radius: 25px;
-  margin: 14px;
+  margin: 14px; 
   padding: 14px;
 }
 
@@ -229,8 +247,8 @@ input[name=desktop] {
 #heberg_categorie_toutes img {
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 0px 0px;
-  width: 246px;
-  height: 124px;
+  width: 95%;
+  height: 60%;
   margin-bottom: 0;
   padding: 0;
   object-fit: cover;
@@ -238,7 +256,7 @@ input[name=desktop] {
 }
 #heberg_categorie_toutes article {
   background: white;
-  width: 255px;
+  width: 30%;
   height: 205px;
   border: 1px solid #FFFFFF;
   border-radius: 20px 20px 20px 20px;
@@ -300,7 +318,7 @@ input[name=desktop] {
 
 .plus_populaire h2 {
   margin: 0;
-  width: 375px;
+  width: 90%;
   height: 26px;
   margin-bottom: 26px;
 }
@@ -317,8 +335,8 @@ input[name=desktop] {
 
 .plus_populaire_cat img {
   border-radius: 20px 0px 0px 20px;
-  width: 137px;
-  height: 144px;
+  width: 35%;
+  height: 100%;
   margin-bottom: 0;
   padding: 0;
   object-fit: cover;
@@ -330,7 +348,7 @@ input[name=desktop] {
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 33px;
-  width: 365px;
+  width: 90%;
   height: 144px;
   box-shadow: 1px 5px 5px #d1d0d0;
 }
@@ -366,8 +384,8 @@ input[name=desktop] {
 }
 
 #activites_toutes img {
-  width: 302px;
-  height: 445px;
+  width: 100%;
+  height: 90%;
   border-radius: 20px 20px 0px 0px;
   object-fit: contain;
 } 
@@ -376,11 +394,15 @@ input[name=desktop] {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 5px 5px #F2F2F2;
+  width: 23%;
+  white-space: nowrap;
 }
 
 #activites_toutes h3 {
-  padding-left: 19px;
+  padding-left: 15px;
   font-weight: 700;
+  margin-top: 3%;
+  font-size: 0.85em;
 }
 
 footer {
@@ -396,7 +418,7 @@ footer {
 
 footer li {
   list-style-type: none; 
-  margin-bottom: 12px;
+  margin-top: 10px;
 }
 
 footer a {
@@ -405,10 +427,10 @@ footer a {
   font-weight: 400;
 }
 
-footer h3 {
+footer strong {
   font-size: 1.2em;
   font-weight: 700;
-  margin-bottom: 20px;
+  line-height: 3em;
 }
 
 div a {
@@ -478,24 +500,21 @@ div a {
     font-size: 0.9em;
   }
 
-  #activites_toutes img {
-    height: 267px;
-    width: 182px;
-  }
-
-  #activites_toutes div {
-    position: relative;
-    max-width: 182px;
-    height: 323px;
-  }
-
   #activites_toutes h3 {
     margin: 7px;
+    font-size: 0.65em;
   }
 
   footer {
     padding-left: 70px;
     padding-right: 173px;
+    font-size: 0.9em;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  footer strong {
+    font-size: 1em;
   }
 }
 
@@ -505,14 +524,16 @@ div a {
     margin: auto;
   }
 
-  .logo_div {
-    width: 98%;
-    position: absolute;
+  header {
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
   }
 
   .logo {
     margin-top: 21px;
-    left: 45%;
+    align-items: center;
+    justify-content: center;
   }
 
   a#nav_heberg,
@@ -522,7 +543,7 @@ div a {
     border-bottom: 3px solid #f2f2f2;
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 0;
     padding-bottom: 23px;
   }
@@ -530,7 +551,7 @@ div a {
   a#nav_heberg:hover,
   a#nav_activ:hover {
     border-top: 0px;
-    margin-top: 100px;
+    margin-top: 3.75em;
     padding: 0;
     padding-bottom: 23px;
     border-bottom: 3px solid #0065FC;
@@ -539,7 +560,7 @@ div a {
   a#nav_heberg:active,
   a#nav_activ:active {
     border-top: 0px;
-    margin-top: 100px;
+    margin-top: 3.75em;
     padding: 0;
     padding-bottom: 23px;
     border-bottom: 3px solid #0065FC;
@@ -562,23 +583,20 @@ div a {
     margin-left: 20px;
   }
   
-  input[name=desktop] {
-  display: none;
-  }
+  #rechercher_loupe {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+  #rechercher_loupe:after {
+    font-family: 'FontAwesome';
+    content: '\f002';
+    position: relative;
+    right: 6px;
+}
 
-  button[name=mobile] {
-    display: block;
-    color: white;
-    background: #0065FC;
-    padding: 22px 24px 22px 24px;
-    border: 1px solid #F2F2F2;
-    border-radius: 0px 15px 15px 0px;
-    font-size: 1.125em;
-    font-weight: 700;
-    }
-  
   input[type=text] {
-    width: 80%;
+    width: 90%;
   }
 
   .filtre {
@@ -708,6 +726,7 @@ div a {
 
   #activites_toutes h3 {
     margin: 15px;
+    font-size: 1em;
   }
 
   h2 {
